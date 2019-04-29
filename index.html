@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="icon" href="img/favicon.png" type="image/png">
-        <title>MeetMe Personal</title>
+        <title>Hervé Tchikladzé</title>
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="vendors/linericon/style.css">
@@ -34,28 +34,6 @@
 							<span class="icon-bar"></span>
 						</button>
 						<!-- Collect the nav links, forms, and other content for toggling -->
-						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-							<ul class="nav navbar-nav menu_nav ml-auto">
-								<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li> 
-								<li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li> 
-								<li class="nav-item"><a class="nav-link" href="services.html">Services</a></li> 
-								<li class="nav-item submenu dropdown">
-									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
-									<ul class="dropdown-menu">
-										<li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-										<li class="nav-item"><a class="nav-link" href="elements.html">Elements</a></li>
-									</ul>
-								</li> 
-								<li class="nav-item submenu dropdown">
-									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
-									<ul class="dropdown-menu">
-										<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-										<li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a></li>
-									</ul>
-								</li> 
-								<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-							</ul>
-						</div> 
 					</div>
             	</nav>
             </div>
@@ -69,49 +47,28 @@
 					<div class="banner_content">
 						<div class="media">
 							<div class="d-flex">
-								<img src="img/Herve.jpg" alt="">
+								<img src="img/Hervé-rectangle.png" alt="">
 							</div>
-							<a href="#" onclick="setLanguage('en')">English</a> 
-							<a href="#" onclick="setLanguage('fr')">French</a>
-							<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-							<script>
-								var language;
-
-								function getLanguage() {
-									(localStorage.getItem('language') == null) ? setLanguage('en') : false;
-									$.ajax({ 
-										url:  './lang/' +  localStorage.getItem('language') + '.json', 
-										dataType: 'json', async: false, dataType: 'json', 
-										success: function (lang) { language = lang }
-									});
-								}
-
-								function setLanguage(lang) {
-									localStorage.setItem('language', lang);
-								}
-						
-								getLanguage();
-								console.log(language.description);
-								$(document).ready(() => {
-									$('#div1').text(language.description);
-									});
-							</script>
 							<div class="media-body">
 								<div class="personal_text">
 									<h6><div id="div1"></div></h6>
-									<h3>Donald McKinney</h3>
-									<h4>Junior UI/UX Developer</h4>
-									<p>You will begin to realise why this exercise is called the Dickens Pattern (with reference to the ghost showing Scrooge some different futures)</p>
+									<h3>Hervé Tchikladzé</h3>
+									<h4>Développeur back-end</h4>
+									<p>Je suis un passionné de nouvelles technologies pouvant révolutionner le
+										monde de demain. Curieux, qualifié et autonome, je recherche une offre
+										de stage à temps-partiel de 6 mois dans le domaine du développement informatique pour
+										début septembre 2019.</p>
 									<ul class="list basic_info">
-										<li><a href="#"><i class="lnr lnr-calendar-full"></i> 31st December, 1992</a></li>
-										<li><a href="#"><i class="lnr lnr-phone-handset"></i> 44 (012) 6954 783</a></li>
-										<li><a href="#"><i class="lnr lnr-envelope"></i> businessplan@donald</a></li>
-										<li><a href="#"><i class="lnr lnr-home"></i> Santa monica bullevard</a></li>
+										<li><i class="lnr lnr-calendar-full"></i> 31 Août, 1996</li>
+										<li><i class="lnr lnr-phone-handset"></i> +33 6 29 36 55 77</li>
+										<li><i class="lnr lnr-envelope"></i> herve.tchikladze@epitech.eu</li>
+										<li><i class="lnr lnr-home"></i> 4 rue du moulin-neuf, 44300 Nantes</li>
 									</ul>
 									<ul class="list personal_social">
-										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-										<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+										<li><a href="https://www.facebook.com/herve.tchikladze"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="https://www.linkedin.com/in/herv%C3%A9-tchikladze-a854a8123/"><i class="fa fa-linkedin"></i></a></li>
+										<li><a href="https://medium.com/@hervtchikladz"><i class="fa fa-medium"></i></a></li>
+										<li><a href="https://github.com/tchikl-h"><i class="fa fa-github"></i></a></li>
 									</ul>
 								</div>
 							</div>
@@ -122,36 +79,26 @@
         </section>
         <!--================End Home Banner Area =================-->
         
-        <!--================Welcome Area =================-->
+				<!--================Welcome Area =================-->
+				<style>
+					.imgspacing {
+						margin: 0 25px;
+					}
+				</style>
         <section class="welcome_area p_120">
         	<div class="container">
         		<div class="row welcome_inner">
         			<div class="col-lg-6">
         				<div class="welcome_text">
-        					<h4>About Myself</h4>
-        					<p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that, as women, our behavior on the job is beyond reproach. inappropriate behavior is often laughed.</p>
+        					<h4>Mon CV</h4>
+        					<p>Téléchargez mon CV afin d'avoir plus d'informations sur mes expériences</p>
         					<div class="row">
-        						<div class="col-md-4">
-        							<div class="wel_item">
-        								<i class="lnr lnr-database"></i>
-        								<h4>$2.5M</h4>
-        								<p>Total Donation</p>
-        							</div>
-        						</div>
-        						<div class="col-md-4">
-        							<div class="wel_item">
-        								<i class="lnr lnr-book"></i>
-        								<h4>1465</h4>
-        								<p>Total Projects</p>
-        							</div>
-        						</div>
-        						<div class="col-md-4">
-        							<div class="wel_item">
-        								<i class="lnr lnr-users"></i>
-        								<h4>3965</h4>
-        								<p>Total Volunteers</p>
-        							</div>
-        						</div>
+											<a href="download/CV_francais_herve_tchikladze_design.pdf" download="CV_francais_herve_tchikladze_design">
+												<img class='imgspacing' src="img/download/cv-design.PNG" alt="">
+											</a>
+											<a href="download/CV_francais_herve_tchikladze_basic.pdf" download="CV_francais_herve_tchikladze_basic">
+												<img class='imgspacing' src="img/download/cv-basic.PNG" alt="">
+											</a>
         					</div>
         				</div>
         			</div>
@@ -159,15 +106,7 @@
         				<div class="tools_expert">
         					<div class="skill_main">
 								<div class="skill_item">
-									<h4>After Effects <span class="counter">85</span>%</h4>
-									<div class="progress_br">
-										<div class="progress">
-											<div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-										</div>
-									</div>
-								</div>
-								<div class="skill_item">
-									<h4>Photoshop <span class="counter">90</span>%</h4>
+									<h4>Typescript <span class="counter">90</span>%</h4>
 									<div class="progress_br">
 										<div class="progress">
 											<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
@@ -175,26 +114,34 @@
 									</div>
 								</div>
 								<div class="skill_item">
-									<h4>Illustrator <span class="counter">70</span>%</h4>
+									<h4>ReactJS <span class="counter">80</span>%</h4>
 									<div class="progress_br">
 										<div class="progress">
-											<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+											<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
 										</div>
 									</div>
 								</div>
 								<div class="skill_item">
-									<h4>Sublime <span class="counter">95</span>%</h4>
+									<h4>VueJS <span class="counter">65</span>%</h4>
 									<div class="progress_br">
 										<div class="progress">
-											<div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+											<div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
 										</div>
 									</div>
 								</div>
 								<div class="skill_item">
-									<h4>Sketch <span class="counter">75</span>%</h4>
+									<h4>.NET <span class="counter">75</span>%</h4>
 									<div class="progress_br">
 										<div class="progress">
 											<div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</div>
+								</div>
+								<div class="skill_item">
+									<h4>Java <span class="counter">65</span>%</h4>
+									<div class="progress_br">
+										<div class="progress">
+											<div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
 										</div>
 									</div>
 								</div>
@@ -212,10 +159,10 @@
         		<div class="tabs_inner">
 					<ul class="nav nav-tabs" id="myTab" role="tablist">
 						<li class="nav-item">
-							<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">My Experiences</a>
+							<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Mes Experiences</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">My Education</a>
+							<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Mon Education</a>
 						</li>
 					</ul>
 					<div class="tab-content" id="myTabContent">
@@ -225,11 +172,11 @@
 									<span></span>
 									<div class="media">
 										<div class="d-flex">
-											<p>March 2017 to present</p>
+											<p>Oct. 2018 à déc. 2018</p>
 										</div>
 										<div class="media-body">
-											<h4>Colorlib</h4>
-											<p>Senior Web Developer <br />Santa monica, Los angeles</p>
+											<h4>Cruncho</h4>
+											<p>Développeur back-end<br />Stockholm, Suède</p>
 										</div>
 									</div>
 								</li>
@@ -237,11 +184,11 @@
 									<span></span>
 									<div class="media">
 										<div class="d-flex">
-											<p>March 2017 to present</p>
+											<p>Avr. 2018 à août 2018</p>
 										</div>
 										<div class="media-body">
-											<h4>Colorlib</h4>
-											<p>Senior Web Developer <br />Santa monica, Los angeles</p>
+											<h4>Expertime</h4>
+											<p>Développeur chatbot <br />Nantes, France</p>
 										</div>
 									</div>
 								</li>
@@ -249,14 +196,26 @@
 								<span></span>
 									<div class="media">
 										<div class="d-flex">
-											<p>March 2017 to present</p>
+											<p>Oct. 2017 à mars 2018</p>
 										</div>
 										<div class="media-body">
-											<h4>Colorlib</h4>
-											<p>Senior Web Developer <br />Santa monica, Los angeles</p>
+											<h4>Auguria</h4>
+											<p>Gestion de CI/CD <br />Nantes, France</p>
 										</div>
 									</div>
 								</li>
+								<li>
+									<span></span>
+										<div class="media">
+											<div class="d-flex">
+												<p>Sept. 2016 à déc. 2016</p>
+											</div>
+											<div class="media-body">
+												<h4>Daxium</h4>
+												<p>Développeur back-end <br />Nantes, France</p>
+											</div>
+										</div>
+									</li>
 							</ul>
 						</div>
 						<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
@@ -265,11 +224,11 @@
 									<span></span>
 									<div class="media">
 										<div class="d-flex">
-											<p>March 2017 to present</p>
+											<p>Sept. 2015 à juin 2020</p>
 										</div>
 										<div class="media-body">
-											<h4>Colorlib</h4>
-											<p>Senior Web Developer <br />Santa monica, Los angeles</p>
+											<h4>Epitech</h4>
+											<p>Expert en technologie de l'information <br />Nantes, France</p>
 										</div>
 									</div>
 								</li>
@@ -277,11 +236,11 @@
 									<span></span>
 									<div class="media">
 										<div class="d-flex">
-											<p>March 2017 to present</p>
+											<p>Sept. 2018 à juin 2019</p>
 										</div>
 										<div class="media-body">
-											<h4>Colorlib</h4>
-											<p>Senior Web Developer <br />Santa monica, Los angeles</p>
+											<h4>Stockholm university</h4>
+											<p>Etudiant <br />Stockholm, Suède</p>
 										</div>
 									</div>
 								</li>
@@ -289,11 +248,11 @@
 								<span></span>
 									<div class="media">
 										<div class="d-flex">
-											<p>March 2017 to present</p>
+											<p>Sept. 2011 à juin 2015</p>
 										</div>
 										<div class="media-body">
-											<h4>Colorlib</h4>
-											<p>Senior Web Developer <br />Santa monica, Los angeles</p>
+											<h4>Lycée bretagne</h4>
+											<p>Lycéen <br />Nantes, France</p>
 										</div>
 									</div>
 								</li>
@@ -309,32 +268,35 @@
         <section class="feature_area p_120">
         	<div class="container">
         		<div class="main_title">
-        			<h2>offerings to my clients</h2>
-        			<p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see some for as low as $.17 each.</p>
+        			<h2>Mes inspirations</h2>
         		</div>
-        		<div class="feature_inner row">
-        			<div class="col-lg-4 col-md-6">
-        				<div class="feature_item">
-        					<i class="flaticon-city"></i>
-        					<h4>Architecture</h4>
-        					<p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see some for as low as $17 each.</p>
-        				</div>
-        			</div>
-        			<div class="col-lg-4 col-md-6">
-        				<div class="feature_item">
-        					<i class="flaticon-skyline"></i>
-        					<h4>Interior Design</h4>
-        					<p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see some for as low as $17 each.</p>
-        				</div>
-        			</div>
-        			<div class="col-lg-4 col-md-6">
-        				<div class="feature_item">
-        					<i class="flaticon-sketch"></i>
-        					<h4>Concept Design</h4>
-        					<p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see some for as low as $17 each.</p>
-        				</div>
-        			</div>
-        		</div>
+							<div class="row gallery-item">
+									<div class="col-md-4">
+										<a href="img/inspiration/bob-ross.jpg" class="img-gal"><div class="single-gallery-image" style="background: url(img/inspiration/bob-ross.jpg);"></div></a>
+									</div>
+									<div class="col-md-4">
+										<a href="img/inspiration/the-family.jpg" class="img-gal"><div class="single-gallery-image" style="background: url(img/inspiration/the-family.jpg);"></div></a>
+									</div>
+									<div class="col-md-4">
+										<a href="img/inspiration/oussama-amar.jpg" class="img-gal"><div class="single-gallery-image" style="background: url(img/inspiration/oussama-amar.jpg);"></div></a>
+									</div>
+									<div class="col-md-6">
+										<a href="img/inspiration/jordan-peterson.jpg" class="img-gal"><div class="single-gallery-image" style="background: url(img/inspiration/jordan-peterson.jpg);"></div></a>
+									</div>
+									<div class="col-md-6">
+										<a href="img/inspiration/tedx.jpg" class="img-gal"><div class="single-gallery-image" style="background: url(img/inspiration/tedx.jpg);"></div></a>
+									</div>
+									<div class="col-md-4">
+										<a href="img/inspiration/koudetat.jpg" class="img-gal"><div class="single-gallery-image" style="background: url(img/inspiration/koudetat.jpg);"></div></a>
+									</div>
+									<div class="col-md-3">
+										<a href="img/inspiration/vsauce.jpg" class="img-gal"><div class="single-gallery-image" style="background: url(img/inspiration/vsauce.jpg);"></div></a>
+									</div>
+									<div class="col-md-5">
+										<a href="img/inspiration/nujabes.jpg" class="img-gal"><div class="single-gallery-image" style="background: url(img/inspiration/nujabes.jpg);"></div></a>
+									</div>
+								</div>
+							</div>
         	</div>
         </section>
         <!--================End Feature Area =================-->
@@ -343,143 +305,126 @@
         <section class="home_gallery_area p_120">
         	<div class="container">
         		<div class="main_title">
-        			<h2>Our Latest Featured Projects</h2>
-        			<p>Who are in extremely love with eco friendly system.</p>
+        			<h2>Portfolio</h2>
         		</div>
-        		<div class="isotope_fillter">
-        			<ul class="gallery_filter list">
-						<li class="active" data-filter="*"><a href="#">All</a></li>
-						<li data-filter=".brand"><a href="#">Vector</a></li>
-						<li data-filter=".manipul"><a href="#">Raster</a></li>
-						<li data-filter=".creative"><a href="#">UI/UX</a></li>
-						<li data-filter=".design"><a href="#">Printing</a></li>
-					</ul>
-        		</div>
-        	</div>
+					</div>
         	<div class="container">
-        		<div class="gallery_f_inner row imageGallery1">
-        			<div class="col-lg-4 col-md-4 col-sm-6 brand manipul design print">
-        				<div class="h_gallery_item">
-        					<div class="g_img_item">
-        						<img class="img-fluid" src="img/gallery/project-1.jpg" alt="">
-        						<a class="light" href="img/gallery/project-1.jpg"><img src="img/gallery/icon.png" alt=""></a>
-        					</div>
-        					<div class="g_item_text">
-        						<h4>3D Helmet Design</h4>
-        						<p>Client Project</p>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="col-lg-4 col-md-4 col-sm-6 brand manipul creative">
-        				<div class="h_gallery_item">
-        					<div class="g_img_item">
-        						<img class="img-fluid" src="img/gallery/project-2.jpg" alt="">
-        						<a class="light" href="img/gallery/project-2.jpg"><img src="img/gallery/icon.png" alt=""></a>
-        					</div>
-        					<div class="g_item_text">
-        						<h4>2D Vinyl Design</h4>
-        						<p>Client Project</p>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="col-lg-4 col-md-4 col-sm-6 manipul creative design print">
-        				<div class="h_gallery_item">
-        					<div class="g_img_item">
-        						<img class="img-fluid" src="img/gallery/project-3.jpg" alt="">
-        						<a class="light" href="img/gallery/project-3.jpg"><img src="img/gallery/icon.png" alt=""></a>
-        					</div>
-        					<div class="g_item_text">
-        						<h4>Creative Poster Design</h4>
-        						<p>Client Project</p>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="col-lg-4 col-md-4 col-sm-6 brand creative print">
-        				<div class="h_gallery_item">
-        					<div class="g_img_item">
-        						<img class="img-fluid" src="img/gallery/project-4.jpg" alt="">
-        						<a class="light" href="img/gallery/project-4.jpg"><img src="img/gallery/icon.png" alt=""></a>
-        					</div>
-        					<div class="g_item_text">
-        						<h4>Embosed Logo Design</h4>
-        						<p>Client Project</p>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="col-lg-4 col-md-4 col-sm-6 brand manipul design">
-        				<div class="h_gallery_item">
-        					<div class="g_img_item">
-        						<img class="img-fluid" src="img/gallery/project-5.jpg" alt="">
-        						<a class="light" href="img/gallery/project-5.jpg"><img src="img/gallery/icon.png" alt=""></a>
-        					</div>
-        					<div class="g_item_text">
-        						<h4>3D Disposable Bottle</h4>
-        						<p>Client Project</p>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="col-lg-4 col-md-4 col-sm-6 brand creative">
-        				<div class="h_gallery_item">
-        					<div class="g_img_item">
-        						<img class="img-fluid" src="img/gallery/project-6.jpg" alt="">
-        						<a class="light" href="img/gallery/project-6.jpg"><img src="img/gallery/icon.png" alt=""></a>
-        					</div>
-        					<div class="g_item_text">
-        						<h4>3D Logo Design</h4>
-        						<p>Client Project</p>
-        					</div>
-        				</div>
-        			</div>
-        		</div>
-        		<div class="more_btn">
+						<div class="gallery_f_inner row imageGallery1 imgcontainer">
+							<div class="col-lg-4 col-md-4 col-sm-6">
+								<a href="https://test-my-chatbot.com/">
+									<div class="h_gallery_item">
+										<div class="g_img_item">
+											<img src="img/portfolio/test-my-chatbot.png" alt="">
+										</div>
+										<div class="g_item_text">
+											<h4>Test my chatbot</h4>
+											<p>Une plateforme de création de tests unitaires pour chatbot</p>
+										</div>
+									</div>
+								</a>
+							</div>
+        			<div class="col-lg-4 col-md-4 col-sm-6">
+								<a href="https://murmure-asmr.herokuapp.com/">
+									<div class="h_gallery_item">
+										<div class="g_img_item">
+											<img src="img/portfolio/murmure.png" alt="">
+										</div>
+										<div class="g_item_text">
+											<h4>Murmure</h4>
+											<p>Clignotement à intervalle régulier de mots français</p>
+										</div>
+									</div>
+								</a>
+							</div>
+        			<div class="col-lg-4 col-md-4 col-sm-6">
+								<a href="https://sell-my-stuff.herokuapp.com">
+									<div class="h_gallery_item">
+										<div class="g_img_item">
+											<img src="img/portfolio/sell-my-stuff.png" alt="">
+										</div>
+										<div class="g_item_text">
+											<h4>Sell my stuff</h4>
+											<p>Site vitrine d'exposition de mes affaires inutile, des étudiants les vendent et touchent des bénéfices</p>
+										</div>
+									</div>
+								</a>
+							</div>
+        			<div class="col-lg-4 col-md-4 col-sm-6">
+								<a href="https://calm-brook-47269.herokuapp.com/">
+									<div class="h_gallery_item">
+										<div class="g_img_item">
+											<img src="img/portfolio/data-visualization.png" alt="">
+										</div>
+										<div class="g_item_text">
+											<h4>Data visualization</h4>
+											<p>Représentation de données en tableau</p>
+										</div>
+									</div>
+								</a>
+							</div>
+        			<div class="col-lg-4 col-md-4 col-sm-6">
+								<div class="h_gallery_item">
+									<div class="g_img_item">
+										<img src="img/portfolio/longewiki.png" alt="">
+									</div>
+									<div class="g_item_text">
+										<h4>Longéwiki (en cours)</h4>
+										<p>Liste des célébrités décédés avant d'atteindre votre âge actuel</p>
+									</div>
+								</div>
+							</div>
+        		<!--<div class="more_btn">
         			<a class="main_btn" href="#">Load More Items</a>
-        		</div>
+        		</div>-->
         	</div>
         </section>
         <!--================End Home Gallery Area =================-->
         
-        <!--================Testimonials Area =================-->
+				<!--================Testimonials Area =================-->
+				<style>
+						a:visited {color:#696969;}  /* visited link */
+					</style>
         <section class="testimonials_area p_120">
         	<div class="container">
         		<div class="main_title">
-        			<h2>Testimonials</h2>
-        			<p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see some for as low as $.17 each.</p>
+        			<h2>Mes articles</h2>
+							<p>Lorsque l'envie me prend, je rédige des articles Medium sur tout et n'importe quoi, mais souvent n'importe quoi</p></br>
+							<a href="https://medium.com/@hervtchikladz"><img src="img/medium.png" alt=""></a>
         		</div>
         		<div class="testi_inner">
 					<div class="testi_slider owl-carousel">
 						<div class="item">
-							<div class="testi_item">
-								<p>As conscious traveling Paup ers we must always be oncerned about our dear Mother Earth. If you think about it, you travel across her face</p>
-								<h4>Fanny Spencer</h4>
-								<a href="#"><i class="fa fa-star"></i></a>
-								<a href="#"><i class="fa fa-star"></i></a>
-								<a href="#"><i class="fa fa-star"></i></a>
-								<a href="#"><i class="fa fa-star"></i></a>
-								<a href="#"><i class="fa fa-star-half-o"></i></a>
-							</div>
+							<a href="https://medium.com/@hervtchikladz/how-to-feel-comfortable-in-bad-situations-catch-up-the-ball-4abeec5c39e7">
+								<div class="testi_item">
+									<h4>How to feel comfortable in bad situations</h4>
+									<p>There will always be inevitable harsh situations to handle in life, it is difficult to admit but it’s true. All your life you will need to calmly endure horrible things and you will definitly feel bad about it...</p>
+								</div>
+							</a>
 						</div>
 						<div class="item">
-							<div class="testi_item">
-								<p>As conscious traveling Paup ers we must always be oncerned about our dear Mother Earth. If you think about it, you travel across her face</p>
-								<h4>Fanny Spencer</h4>
-								<a href="#"><i class="fa fa-star"></i></a>
-								<a href="#"><i class="fa fa-star"></i></a>
-								<a href="#"><i class="fa fa-star"></i></a>
-								<a href="#"><i class="fa fa-star"></i></a>
-								<a href="#"><i class="fa fa-star-half-o"></i></a>
-							</div>
+							<a href="https://medium.com/@hervtchikladz/my-weird-phobia-of-skyscrapers-view-from-below-d6d31e035257">
+								<div class="testi_item">
+									<h4>My weird phobia of skyscrapers</h4>
+									<p>The picture just above may amaze you, but personnally It makes me really uncomfortable. Since I am 13, I have developed a fear of tallness. How did I get this phobia ? I am not quite sure, I would say that I’ve ...</p>
+								</div>
+							</a>
 						</div>
 						<div class="item">
-							<div class="testi_item">
-								<p>As conscious traveling Paup ers we must always be oncerned about our dear Mother Earth. If you think about it, you travel across her face</p>
-								<h4>Fanny Spencer</h4>
-								<a href="#"><i class="fa fa-star"></i></a>
-								<a href="#"><i class="fa fa-star"></i></a>
-								<a href="#"><i class="fa fa-star"></i></a>
-								<a href="#"><i class="fa fa-star"></i></a>
-								<a href="#"><i class="fa fa-star-half-o"></i></a>
-							</div>
+							<a href="https://medium.com/@hervtchikladz/my-weird-phobia-of-skyscrapers-view-from-below-d6d31e035257">
+								<div class="testi_item">
+									<h4>How to really wake up ?</h4>
+									<p>Waking up is the hardest task of the day in my opinion. Even if it is always the same first step of the day, it is difficult no matter your motivation. In your bed at morning time, you are not you anymore. Through my scholarship, I have been inventing many techniques to wake the lazy version of me in his bed...</p>
+								</div>
+							</a>
 						</div>
+						<div class="item">
+								<a href="https://medium.com/@hervtchikladz/my-weird-phobia-of-skyscrapers-view-from-below-d6d31e035257">
+									<div class="testi_item">
+										<h4>Single-sided mental representations</h4>
+										<p>It is in the human spirit to be afraid of the unknown. You might have experienced it through the invasions of doubts you can get while taking a decisions (or people around you taking decision that will influence on you) that will drastically change your life...</p>
+									</div>
+								</a>
+							</div>
 					</div>
         		</div>
         	</div>
@@ -559,6 +504,5 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         <script src="vendors/counter-up/jquery.counterup.min.js"></script>
         <script src="js/mail-script.js"></script>
         <script src="js/theme.js"></script>
-				<script src="js/lang.js"></script>
 			</body>
 </html>
