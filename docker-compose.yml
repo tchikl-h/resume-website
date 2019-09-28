@@ -1,0 +1,22 @@
+version: "3.5"
+
+services:
+  herve-website:
+    build: .
+    container_name: herve-tchikladze.com
+    restart: always
+    # port make it available outside the container AND server
+    ports:
+      - "3001:8080"
+    command: "npm run start"
+    environment:
+      - VIRTUAL_HOST=herve-tchikladze.com
+      - LETSENCRYPT_HOST=herve-tchikladze.com
+      - LETSENCRYPT_EMAIL=herve.tchikladze@epitech.eu
+    networks:
+      - default
+
+networks:
+  default:
+    external:
+      name: webproxy
