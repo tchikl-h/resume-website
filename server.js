@@ -11,12 +11,12 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname + '/index.html'));
 });
 
-app.get('/login', (req, res) => {
-  res.send("login");
+app.get('/signin', (req, res) => {
+  res.send("singin");
 });
 
-app.get('/logout', (req, res) => {
-  res.send("logout");
+app.get('/signout', (req, res) => {
+  res.send("signout");
 });
 
 server.listen(8080, (err) => {
