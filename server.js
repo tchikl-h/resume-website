@@ -10,15 +10,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname + '/index.html'));
 });
-
-app.get('/signin', (req, res) => {
-  res.send("singin");
-});
-
-app.get('/signout', (req, res) => {
-  res.send("signout");
-});
-
 server.listen(8080, (err) => {
   if (err) {
     console.log(err);
